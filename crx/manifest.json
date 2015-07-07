@@ -5,12 +5,13 @@
     
     "description": "在任意网页取词翻译，添加到扇贝网学习计划，章鱼的毕业设计作品",
     "icons": {
-        "48": "icon128.png",
+        "16": "icon16.png",
+        "48": "icon48.png",
         "128": "icon128.png"
     },
 
     "browser_action": {
-        "default_icon": "icon128.png",
+        "default_icon": "icon16.png",
         "default_title": ""
     },
     "background": {
@@ -28,5 +29,5 @@
     "permissions": [
         "cookies", "contextMenus", "activeTab", "tabs", "storage", "*://*/*", "\u003Call_urls\u003E"
     ],
-    "web_accessible_resources": ["icon128.png"]
+    "web_accessible_resources": ["icon16.png"]
 }
