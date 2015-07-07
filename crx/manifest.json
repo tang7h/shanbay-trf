@@ -1,28 +1,22 @@
 {
     "manifest_version": 2,
-    "name": "唐瑞峰的扇贝查词工具",
-    "version": "0.2.3",
+    "name": "扇贝取词工具by章鱼",
+    "version": "0.2.4",
     
-    "description": "在任意网页取词翻译，添加到扇贝网学习计划，唐瑞峰的毕业设计作品",
+    "description": "在任意网页取词翻译，添加到扇贝网学习计划，章鱼的毕业设计作品",
     "icons": {
-        "48": "icon192.png",
-        "128": "icon192.png"
+        "48": "icon128.png",
+        "128": "icon128.png"
     },
 
     "browser_action": {
-        "default_icon": "icon192.png",
-    //     // "default_popup": "popup.html",
+        "default_icon": "icon128.png",
         "default_title": ""
     },
     "background": {
         "scripts": ["js/jquery-2.1.4.min.js", "js/background.js"]
     },
-    // "options_page": "options.html",
-    // "chrome_ui_overrides":{
-    //     "bookmarks_ui":{
-    //         "remove_button":true
-    //     }
-    // },
+
     "content_scripts": [
         {
             "css": [ "css/shanbay-trf.css" ],
@@ -34,5 +28,5 @@
     "permissions": [
         "cookies", "contextMenus", "activeTab", "tabs", "storage", "*://*/*", "\u003Call_urls\u003E"
     ],
-    "web_accessible_resources": ["icon192.png"]
+    "web_accessible_resources": ["icon128.png"]
 }
