@@ -56,6 +56,7 @@
 #shanbay_popover .speak{
 	color: #1DE9B6;
 	cursor: pointer;
+	background: rgba(0,0,0,0);
 }
 #shanbay_popover .speak .icon-speak{
 	opacity: .5;
