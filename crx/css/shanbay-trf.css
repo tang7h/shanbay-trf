@@ -31,9 +31,6 @@
 }
 
 /*title*/
-#shanbay_popover .popover-inner h3{
-	margin: 0;
-}
 #shanbay_popover .popover-inner .popover-title {
 	margin: 24px;
 	padding: 0;
@@ -70,6 +67,7 @@
 #shanbay_popover .speak:active .icon-speak{
 	opacity: 1;
 }
+
 /*content*/
 #shanbay_popover .popover-content{
 	color: rgba(0,0,0,.87);
@@ -78,10 +76,7 @@
 	margin: 16px 24px;
 	padding: 0;
 }
-#shanbay_popover .popover-content p{
-	margin: 0;
-	line-height: 20px;
-}
+
 /*action area*/
 #shanbay_popover .action-area{
 	height: 48px;
@@ -89,7 +84,7 @@
 	margin: 8px 24px;
 	-webkit-user-select: none;
 }
-#shanbay_popover .action-area p{
+#shanbay_popover .action-area .success{
 	line-height: 48px;
 	float: right;
 }
