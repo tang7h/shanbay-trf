@@ -67,9 +67,9 @@ function popover(alldata) {
       console.log("learning_id: ",data.data.learning_id);
     if(data.data.learning_id==undefined){// word exist, but not learned
         console.log("condition 3, not learned");
-              htmltmp += '<p><span class="word">'+data.data.content+'</span>'
+              htmltmp += '<span class="word">'+data.data.content+'</span>'
               +'<span class="pronunciation">'+(data.data.pron.length ? ' ['+data.data.pron+'] ': '')+'</span>'
-            +'<a href="#" class="speak us"><svg class="icon-speak" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="#FFEB3B"><path d="M12.79 9c0-1.3-.72-2.42-1.79-3v6c1.06-.58 1.79-1.7 1.79-3zM2 7v4h3l4 4V3L5 7H2zm9-5v1.5c2.32.74 4 2.93 4 5.5s-1.68 4.76-4 5.5V16c3.15-.78 5.5-3.6 5.5-7S14.15 2.78 11 2z"/></svg></i></a></p></h3>'
+            +'<a href="#" class="speak us"><svg class="icon-speak" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="#FFEB3B"><path d="M12.79 9c0-1.3-.72-2.42-1.79-3v6c1.06-.58 1.79-1.7 1.79-3zM2 7v4h3l4 4V3L5 7H2zm9-5v1.5c2.32.74 4 2.93 4 5.5s-1.68 4.76-4 5.5V16c3.15-.78 5.5-3.6 5.5-7S14.15 2.78 11 2z"/></svg></i></a></h3>'
             +'<div class="popover-content">'
             +'<p>'+data.data.definition.split('\n').join("<br/>")+"<br/>"+'</p></div>'
             +'<div class="action-area"><a href="#" class="btn primary" id="shanbay-add-btn">添加生词</a>'
@@ -80,9 +80,9 @@ function popover(alldata) {
     else {// word recorded
     console.log("condition 4, learned");
       var forgotUrl="http://www.shanbay.com/review/learning/"+data.data.learning_id;
-    	htmltmp += '<p><span class="word">'+data.data.content+'</span>'
+    	htmltmp += '<span class="word">'+data.data.content+'</span>'
       		+'<span class="pronunciation">'+(data.data.pron.length ? ' ['+data.data.pron+'] ': '')+'</span>'
-			+'<a href="#" class="speak us"><svg class="icon-speak" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="#FFEB3B"><path d="M12.79 9c0-1.3-.72-2.42-1.79-3v6c1.06-.58 1.79-1.7 1.79-3zM2 7v4h3l4 4V3L5 7H2zm9-5v1.5c2.32.74 4 2.93 4 5.5s-1.68 4.76-4 5.5V16c3.15-.78 5.5-3.6 5.5-7S14.15 2.78 11 2z"/></svg></i></a></p></h3>'
+			+'<a href="#" class="speak us"><svg class="icon-speak" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="#FFEB3B"><path d="M12.79 9c0-1.3-.72-2.42-1.79-3v6c1.06-.58 1.79-1.7 1.79-3zM2 7v4h3l4 4V3L5 7H2zm9-5v1.5c2.32.74 4 2.93 4 5.5s-1.68 4.76-4 5.5V16c3.15-.78 5.5-3.6 5.5-7S14.15 2.78 11 2z"/></svg></i></a></h3>'
 			+'<div class="popover-content">'
 			+'<p>'+data.data.definition.split('\n').join("<br/>")+'</p></div>'
       +'<div class="action-area"><a href="#" class="btn primary" id="shanbay-forget-btn">我忘了</a>'
