@@ -42,6 +42,7 @@
 #shanbay_popover .word{
 	color: rgba(0,0,0,.87);
 	font-size: 20px;
+	font-weight: bold;
 }
 #shanbay_popover .pronunciation{
 	color: rgba(0,0,0,.54);
@@ -88,54 +89,64 @@
 	line-height: 48px;
 	float: right;
 }
-#shanbay_popover .btn{
-	/*min-width: 88px;*/
-	height: 36px;
-	font-size: 14px;
-	font-weight: bold;
-	color: rgba(0,0,0,.54);
-	background: rgba(255,255,255,0);
-	display: inline-block;
-	text-decoration: none;
-	text-align: center;
-	line-height: 36px;
-	padding: 0 16px;
-	margin: 6px 8px 6px 0;
-	border-radius: 2px;
-	overflow: hidden;
-	transition: all .2s ease-in-out;
-}
-#shanbay_popover .btn:hover{
-	background: rgba(0,0,0,.12);
-}
-#shanbay_popover .btn:active{
-	background: rgba(0,0,0,.2);
-}
-#shanbay_popover .primary{
-	color: #fff;
-	background: #ffeb3b;
-}
-#shanbay_popover .primary:hover{
-	color: #fff;
-	background: #FDD835;
-	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-}
-#shanbay_popover .primary:active{
-	background: #FBC02D;
-}
-#shanbay_popover .disable,
-#shanbay_popover .disable:hover,
-#shanbay_popover .disable:active{
-	background: #FFEE58;
-	box-shadow: none;
-	cursor: default;
-}
 
 #shanbay_popover .success{
 	color: #FFEE58;
 }
 #shanbay_popover .failed{
 	color: #FFEE58;
+}
+
+.shanbay-btn{
+	/*min-width: 88px;*/
+	height: 36px;
+	font-size: 14px;
+	font-weight: bold;
+	display: inline-block;
+	text-decoration: none;
+	text-align: center;
+	line-height: 36px;
+	padding: 0 16px;
+	margin: 6px 8px 6px 0;
+	border: none;
+	border-radius: 2px;
+	overflow: hidden;
+	transition: all .2s ease-in-out;
+}
+
+#shanbay-add-btn,
+#shanbay-forget-btn{
+	color: #fff;
+	background: #ffeb3b;
+}
+#shanbay-add-btn:hover,
+#shanbay-forget-btn:hover{
+	color: #fff;
+	background: #FDD835;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+#shanbay-add-btn:active,
+#shanbay-forget-btn:active{
+	background: #FBC02D;
+}
+#shanbay-check-btn{
+	color: rgba(0,0,0,.54);
+	background: rgba(0,0,0,0);
+}
+#shanbay-check-btn:hover{
+	background: rgba(0,0,0,.12);
+}
+#shanbay-check-btn:active{
+	background: rgba(0,0,0,.2);
+}
+
+
+#shanbay_popover .disable,
+#shanbay_popover .disable:hover,
+#shanbay_popover .disable:active{
+	background: #FFEE58;
+	box-shadow: none;
+	cursor: default;
 }
 
 @-webkit-keyframes popover-in{

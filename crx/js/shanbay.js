@@ -72,8 +72,8 @@ function popover(alldata) {
             +'<a href="#" class="speak us"><svg class="icon-speak" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="#FFEB3B"><path d="M12.79 9c0-1.3-.72-2.42-1.79-3v6c1.06-.58 1.79-1.7 1.79-3zM2 7v4h3l4 4V3L5 7H2zm9-5v1.5c2.32.74 4 2.93 4 5.5s-1.68 4.76-4 5.5V16c3.15-.78 5.5-3.6 5.5-7S14.15 2.78 11 2z"/></svg></i></a></h3>'
             +'<div class="popover-content">'
             +'<p>'+data.data.definition.split('\n').join("<br/>")+"<br/>"+'</p></div>'
-            +'<div class="action-area"><a href="#" class="btn primary" id="shanbay-add-btn">添加生词</a>'
-            +'<a href="#" target="_blank" class="btn hide" id="shanbay-check-btn">查看</a>'
+            +'<div class="action-area"><a href="#" class="shanbay-btn" id="shanbay-add-btn">添加生词</a>'
+            +'<a href="#" target="_blank" class="shanbay-btn hide" id="shanbay-check-btn">查看</a>'
             +'<p class="success hide">成功添加！</p>'
             +'</div>';
             }
@@ -85,8 +85,8 @@ function popover(alldata) {
 			+'<a href="#" class="speak us"><svg class="icon-speak" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="#FFEB3B"><path d="M12.79 9c0-1.3-.72-2.42-1.79-3v6c1.06-.58 1.79-1.7 1.79-3zM2 7v4h3l4 4V3L5 7H2zm9-5v1.5c2.32.74 4 2.93 4 5.5s-1.68 4.76-4 5.5V16c3.15-.78 5.5-3.6 5.5-7S14.15 2.78 11 2z"/></svg></i></a></h3>'
 			+'<div class="popover-content">'
 			+'<p>'+data.data.definition.split('\n').join("<br/>")+'</p></div>'
-      +'<div class="action-area"><a href="#" class="btn primary" id="shanbay-forget-btn">我忘了</a>'
-      +'<a href="'+forgotUrl+'" target="_blank" class="btn" id="shanbay-check-btn">查看</a></div>'
+      +'<div class="action-area"><a href="#" class="shanbay-btn" id="shanbay-forget-btn">我忘了</a>'
+      +'<a href="'+forgotUrl+'" target="_blank" class="shanbay-btn" id="shanbay-check-btn">查看</a></div>'
       +'<p class="success hide">成功添加！</p>'
 			+'</div>';
       }
@@ -101,8 +101,7 @@ function popover(alldata) {
 
     $('#shanbay_popover').html(htmltmp);
     $('#shanbay_popover').removeClass('hide');
-
-    // $('iframe html body #shanbay_popover').remove();
+    $('iframe #shanbay_popover').addClass('hide');
 
    	getSelectionOffset(function(left, top) {
 		setPopoverPosition(left, top);
@@ -151,7 +150,6 @@ function getSelectionOffset(callback) {
   	dummy.remove();
     window.getSelection().addRange(range);
   }
-	// console.log(left + ':' + top);
 	callback(left, top);
 }
 function getTop(e){
