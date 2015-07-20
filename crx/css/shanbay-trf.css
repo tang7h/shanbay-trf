@@ -73,7 +73,7 @@
 #shanbay_popover .popover-content{
 	color: rgba(0,0,0,.87);
 	font-size: 14px;
-	line-height: 14px;
+	line-height: 20px;
 	margin: 16px 24px;
 	padding: 0;
 }
@@ -82,7 +82,7 @@
 #shanbay_popover .action-area{
 	height: 48px;
 	line-height: 48px;
-	margin: 8px 24px;
+	margin: 6px 16px;
 	-webkit-user-select: none;
 }
 #shanbay_popover .action-area .success{
@@ -106,12 +106,15 @@
 	text-decoration: none;
 	text-align: center;
 	line-height: 36px;
-	padding: 0 16px;
-	margin: 6px 8px 6px 0;
+	padding: 0 8px;
+	margin: 4px;
 	border: none;
 	border-radius: 2px;
 	overflow: hidden;
 	transition: all .2s ease-in-out;
+}
+.shanbay-btn:first-child{
+	margin-left: 0;
 }
 
 #shanbay-add-btn,
