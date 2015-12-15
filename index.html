@@ -7,11 +7,16 @@
 	<script src="crx/js/main.js"></script>
 	<script src="crx/js/shanbay.js"></script>
 	<link href="crx/css/shanbay-trf.css" type="text/css" rel="stylesheet" />
+	<style>
+		.container{max-width:500px; margin:0 auto;}
+		.left{width:250px; height:300px; float:left;}
+		.right{width:250px; float:left;}
+	</style>
 </head>
 <body>
-<p>这是一个UI测试页面。<a href="https://github.com/tang7h/shanbay-trf/blob/master/shanbay-trf_0_2_5.crx">crx安装文件</a></p>
-
-<div id="shanbay_popover" style="position: absolute;">
+<div class="container">
+	<div class="left">
+		<div id="shanbay_popover" style="position: absolute;">
 	<div id="shanbay_popover">
 		<div class="popover-inner">
 			<h3 class="popover-title">
@@ -30,5 +35,13 @@
 		</div>
 	</div>
 </div>
+	</div>
+	<div class="right">
+		<h1>扇贝取词插件</h1>
+		<p class="desc">for Chrome</p>
+		<p>当我觉得他足够好了，就上架</p>
+	</div>
+</div>
+
 </body>
 </html>
